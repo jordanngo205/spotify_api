@@ -1,38 +1,50 @@
+/* App.css */
 .App {
+  text-align: center;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #000;
+}
+
+
+.hero {
+  display: block;
+  background: rgb(67, 62, 156);
+  background: linear-gradient(
+  90deg,
+  rgba(67, 62, 156, 1) 0%,
+  rgba(122, 41, 120, 1) 79%,
+  rgba(0, 212, 255, 1) 100%
+  );
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.login-button {
+  background-color: #1db954;
   color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-button:hover {
+  background-color: #1a9134;
 }
